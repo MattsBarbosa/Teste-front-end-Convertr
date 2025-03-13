@@ -69,11 +69,17 @@
 .logos {
     display: flex;
     justify-content: center;
-    gap: 20px;
     height: 70px;
+    
+    .logo_tatuape {
+        margin-right: 10px;
+    }
 
-    .logo_emporio {
-        width: 120px;
+    .separator {
+        width: 2px; 
+        background-color: black; 
+        height: 100%;  
+        margin: 0 15px; 
     }
 }
 
