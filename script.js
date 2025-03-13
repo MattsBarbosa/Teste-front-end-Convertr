@@ -22,7 +22,7 @@ function prevSlide() {
     changeSlide(prevIndex);
 }
 
-/*setInterval(nextSlide, 5000);*/
+setInterval(nextSlide, 5000);
 
 
 document.addEventListener('DOMContentLoaded', () => {

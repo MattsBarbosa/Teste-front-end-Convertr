@@ -1,9 +1,9 @@
 .acessorios {
-    display: grid;
-    grid-template-columns: 700px 1fr;
+    display: flex;
+    flex-direction: column;
     background-color: black;
     color: white;
-    padding: 100px 0px;
+    padding: 35px 0px 48px 0px;
 
     .container {
         display: flex;
@@ -11,9 +11,10 @@
         align-items: center;
 
         h2 {
-            font-size: 40px;
-            font-weight: 700;
-            margin-bottom: 80px;
+            padding-left: 0px;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
         }
     }
 
@@ -27,16 +28,21 @@
 }
 
 .reviews {
-    padding: 80px 40px;
+    padding: 70px 10px;
 
     h2 {
         margin-bottom: 40px;
-        margin-left: 60px;
 
         span {
             font-weight: normal;
+            font-size: 18px;
+            padding-left: 8px;
         }
     }
+}
+
+.container_review {
+    padding-left: 36px;
 }
 
 .slider_container {
@@ -45,20 +51,15 @@
     justify-content: center;
     position: relative;
     width: 100%;
-    margin: 0 auto;
 }
 
 .slider_reviews {
     display: flex;
-    overflow: hidden;
     width: 100%;
-    padding: 0px 50px;
-    justify-content: center;
-    transition: transform 0.5s ease-in-out;
 }
 
 .slide_review {
-    padding: 20px;
+    padding-top: 10px;
 
     img {
         width: 12px;
