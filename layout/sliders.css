@@ -92,6 +92,7 @@
     cursor: pointer;
     padding: 10px 20px;
     font-size: 14px;
+    font-weight: bold;
     margin-top: 10px;
     background-color: black;
     border: none;
@@ -102,6 +103,7 @@
 
 .buy_button:hover {
     transform: scale(1.1);
+    background: radial-gradient(at bottom, rgb(254, 255, 255), rgb(228, 228, 228));
 }
 
 .size_options {
