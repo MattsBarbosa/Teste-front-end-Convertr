@@ -1,0 +1,121 @@
+.acessorios {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    background-color: black;
+    color: white;
+    padding: 100px 0px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 80px;
+        }
+    }
+
+    .left_arrow {
+        left: 45%;
+    }
+
+    .slider_arrow {
+        top: 40%;
+    }
+}
+
+.reviews {
+    padding: 80px 40px;
+
+    h2 {
+        margin-bottom: 40px;
+        margin-left: 60px;
+
+        span {
+            font-weight: normal;
+        }
+    }
+}
+
+.slider_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider_reviews {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    padding: 0px 50px;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide_review {
+    padding: 20px;
+
+    img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.review_user_info {
+    padding-top: 20px;
+
+    P {
+        padding: 20px 0px 38px 0px;
+    }
+}
+
+.slider_container button {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.prev_review {
+    left: 0;
+}
+
+.next_review {
+    right: 0;
+}
+
+button:hover {
+    color: #333;
+}
+
+.slider_bars {
+    display: flex;
+    justify-content: center;
+    position: absolute; 
+    bottom: 5px;       
+    width: 100%;        
+    gap: 10px;   
+
+    .bar {
+        width: 18px;
+        height: 8px;
+        background-color: #333; 
+        border-radius: 2px; 
+        transition: background-color 0.3s ease;
+    }
+}
+
+
+.bar:hover {
+    background-color: #555; 
+}

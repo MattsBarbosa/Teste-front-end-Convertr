@@ -1,0 +1,118 @@
+.banner_slider {
+    position: relative;
+    width: 100%;
+    height: 760px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 760px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.arrow {
+    position: absolute;
+    top: 90%;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    background-size: contain;
+    transition: opacity 0.3s;
+    background-repeat: no-repeat;
+}
+
+.arrow.left {
+    left: 40%;
+    background-image: url(../icons/next-left.png);
+    background-position: center;
+}
+
+.arrow.right {
+    right: 40%;
+    background-image: url(../icons/next-right.png);
+    background-position: center;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.bar {
+    width: 180px;
+    height: 2px;
+    background-image: url('../icons/barra-hero1.png');
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.bar.active {
+    background-image: none;
+    background-color: white;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 70px;
+
+    .logo_emporio {
+        width: 120px;
+    }
+}
+
+.slide_content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40%;
+    left: 5%;
+
+    h2 {
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+    }
+
+    span {
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        color: white;
+    }
+}
+
+.buy-button {
+    height: 50px;
+    width: 180px;
+    color: white;
+    font-weight: bold;
+    background-image: url(../icons/botão-hero-1.png);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.buy-button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
