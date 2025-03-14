@@ -13,12 +13,12 @@
         h2 {
             font-size: 40px;
             font-weight: 700;
-            margin-bottom: 80px;
+            margin: 0px 20px 80px 0px;
         }
     }
 
     .left_arrow {
-        left: 40%;
+        left: 45%;
     }
 
     .slider_arrow {

@@ -51,3 +51,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+const leftArrow = document.querySelector('.category_arrow.left');
+const rightArrow = document.querySelector('.category_arrow.right');
+const wrapper = document.querySelector('.buy_category_wrapper');
+
+
+const slideAmount = 300; 
+
+function slideLeft() {
+    wrapper.scrollBy({
+        left: -slideAmount,  
+        behavior: 'smooth'   
+    });
+}
+
+function slideRight() {
+    wrapper.scrollBy({
+        left: slideAmount,  
+        behavior: 'smooth'  
+    });
+}
+
+leftArrow.addEventListener('click', slideLeft);
+rightArrow.addEventListener('click', slideRight);
+

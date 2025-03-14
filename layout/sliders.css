@@ -5,13 +5,13 @@
     margin-top: 55px;
 
     h2 {
-        padding-left: 40px;
+        padding-left: 120px;
     }
 }
 
 .slider_arrow {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     background-color: #000;
     color: #fff;
@@ -24,7 +24,7 @@
 }
 
 .left_arrow {
-    left: 10px;
+    left: 98px;
 }
 
 .right_arrow {
@@ -37,7 +37,7 @@
 
 .slider_wrapper {
     display: flex;
-    padding-left: 40px;
+    padding-left: 120px;
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -90,6 +90,7 @@
 
 .buy_button {
     cursor: pointer;
+    height: 50px;
     padding: 10px 20px;
     font-size: 14px;
     font-weight: bold;
@@ -178,6 +179,6 @@
     background-color: #f5f3f3;
 
     h2 {
-        padding: 60px 0px 20px 40px;
+        padding: 60px 0px 20px 120px;
     }
 }
