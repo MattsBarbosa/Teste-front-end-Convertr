@@ -25,29 +25,12 @@ function prevSlide() {
 setInterval(nextSlide, 5000);
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const sliders = document.querySelectorAll('.slider');
+document.querySelectorAll('.h3').forEach(header => {
+    header.addEventListener('click', () => {
+        const dropdown = header.nextElementSibling;
 
-    sliders.forEach(slider => {
-        const sliderWrapper = slider.querySelector('.slider_wrapper');
-        const leftArrow = slider.querySelector('.left_arrow');
-        const rightArrow = slider.querySelector('.right_arrow');
-
-        const scrollStep = 300;
-
-        leftArrow.addEventListener('click', () => {
-            sliderWrapper.scrollBy({
-                left: -scrollStep,
-                behavior: 'smooth'
-            });
-        });
-
-        rightArrow.addEventListener('click', () => {
-            sliderWrapper.scrollBy({
-                left: scrollStep,
-                behavior: 'smooth'
-            });
-        });
+        dropdown.classList.toggle('active');
+        
+        header.classList.toggle('active');
     });
 });
-

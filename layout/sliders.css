@@ -64,7 +64,6 @@
 }
 
 .buy_button {
-    cursor: pointer;
     padding: 10px 20px;
     font-size: 14px;
     font-weight: bold;
@@ -98,7 +97,6 @@
     color: white;
     border-radius: 50%;
     font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
@@ -116,7 +114,6 @@
     position: absolute;
     top: 10px;
     right: 5px;
-    cursor: pointer;
     transform: scale(0.75);
 }
 

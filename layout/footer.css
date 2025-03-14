@@ -1,12 +1,11 @@
 footer {
     width: 100%;
-    margin-top: 90px;
 }
 
 .about {
     flex-direction: column;
     align-items: center;
-    padding: 0px 40px 60px 40px;
+    padding: 0px 25px 40px 25px;
 }
 
 .about_logo {
@@ -18,8 +17,9 @@ footer {
 
 .about_content {
     p {
+        font-size: 12px;
         text-align: center;
-        padding: 0, 40px;
+        padding: 0px, 40px;
     }
 }
 
@@ -31,7 +31,7 @@ footer {
     padding: 70px 0;
 
     h2 {
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 700;
         letter-spacing: .007em;
         text-align: center;
@@ -39,12 +39,17 @@ footer {
     }
 
     div {
-        width: 620px;
+        width: 100%;
         margin-bottom: 20px;
     }
 
+    .input_container {
+        display: flex;
+        justify-content: center;
+    }
+
     input {
-        width: 100%;
+        width: 90%;
         color: white;
         font-size: 16px;
         text-align: center;
@@ -74,7 +79,6 @@ footer {
         height: 23px;
         margin-right: 5px;
         border: 1px solid white;
-        cursor: pointer;
         position: relative;
         display: flex;
         align-items: center;
@@ -116,15 +120,67 @@ footer {
 .footer_wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px 3%;
-    background-color: #f5f3f3;
+    padding: 10px;
+    background-color: white;
     justify-content: center;
     align-items: center;
 }
 
+.dropdowns_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.col {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    position:relative
+}
+
+.arrow_down::after {
+    content: '▼'; 
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.h3.active::after {
+    transform: rotate(180deg); 
+}
+
+col .dropdown{
+
+}
+.dropdown {
+    display: none;
+    margin-top: 8px;
+    padding-left: 20px;
+
+    li {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #e3dfdc;
+    }
+}
+
+.dropdown.active {
+    display: block;
+}
+
 .footer_links {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
     gap: 20px;
     justify-content: center;
 
@@ -155,14 +211,20 @@ footer {
         li {
             font-size: 14px;
             margin-bottom: 10px;
-            cursor: pointer;
         }
     }
 
     .col_footer_pay-sec {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 40px;
+    }
+
+    .footer_payments {
+        p {
+            text-align: center;
+            padding: 30px 0px;
+        }
     }
 
     .footer_payments ol {
@@ -220,6 +282,7 @@ footer {
         }
 
         span {
+            text-align: center;
             font-size: 14px;
             padding-bottom: 15px;
         }
@@ -228,7 +291,8 @@ footer {
     .footer_socials {
         nav {
             display: flex;
-            gap: 10px;
+            justify-content: center;
+            gap: 15px;
 
             .fc-icon {
                 height: 18px;
@@ -246,8 +310,8 @@ footer {
 .copy_wrapper {
     align-items: center;
     justify-content: center;
-    padding: 80px 40px;
-    background-color: #f5f3f3;
+    padding: 40px 40px;
+    background-color: white;
 }
 
 .copy {
@@ -263,14 +327,12 @@ footer {
         font-weight: 300;
         text-align: center;
     }
-
-    img {
-        width: 98px;
-        height: 19px;
-    }
 }
 
 .logo_convertr {
+    margin: 30px;
     position: absolute;
-    right: 250px;
+    right: 35%;
+    width: 98px;
+    height: 19px;
 }
